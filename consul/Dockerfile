@@ -14,3 +14,5 @@ RUN cd /usr/local/sbin && unzip /tmp/consul.zip
 EXPOSE 8400 8500 8600/udp
 
 RUN echo "server=/consul/127.0.0.1#8600" > /etc/dnsmasq.d/10-consul
+
+RUN mkdir -p /consul/config
